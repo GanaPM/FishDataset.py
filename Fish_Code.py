@@ -19,5 +19,17 @@ plt.xticks(rotation=45,horizontalalignment='right' )
 
 st.pyplot(fig)
 
+fig1,ax=plt.subplots()
+ax.bar(Species_Of_Fish,Height_Of_Fish)
+
+plt.bar(Species_Of_Fish,Height_Of_Fish)
+plt.xlabel('Species_Of_Fish')
+plt.ylabel('Height_Of_Fish')
+plt.title('Height_vs_Species')
+plt.xticks(rotation=45,horizontalalignment='right' )
+
+st.pyplot(fig1)
+
+
 print ('Pike species fishes weights more')
 
