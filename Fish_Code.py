@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 
-df = pd.read_csv(r'C:\Users\pmgan\DATA200\hw4\Fish_Dataset.csv')
+df = pd.read_csv(r'Fish_Dataset.csv')
 Species_Of_Fish = df['Species']
 Weight_Of_Fish = df['Weight']
 
