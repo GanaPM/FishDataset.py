@@ -19,6 +19,9 @@ plt.xticks(rotation=45,horizontalalignment='right' )
 
 st.pyplot(fig)
 
+Species_Of_Fish = df['Species']
+Height_Of_Fish = df['Height']
+
 fig1,ax=plt.subplots()
 ax.bar(Species_Of_Fish,Height_Of_Fish)
 
