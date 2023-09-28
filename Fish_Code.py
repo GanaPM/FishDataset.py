@@ -34,5 +34,5 @@ plt.xticks(rotation=45,horizontalalignment='right' )
 st.pyplot(fig1)
 
 
-print ('Pike species fishes weights more')
+
 
