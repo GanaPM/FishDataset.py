@@ -7,7 +7,7 @@ import streamlit as st
 
 option = st.selectbox(
     'How would you like to be contacted?',
-    ('Weight_vs_Species','Height_vs_Species'),)
+    (st.pyplot(fig),st.pyplot(fig1)),)
 
 st.write('You selected:', option)
 
