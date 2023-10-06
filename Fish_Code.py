@@ -33,6 +33,12 @@ plt.xticks(rotation=45,horizontalalignment='right' )
 
 st.pyplot(fig1)
 
+import streamlit as st
+
+# Create a button
+if st.button("Click me"):
+    st.write("Button was clicked!")
+
 
 
 
