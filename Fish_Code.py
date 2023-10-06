@@ -21,9 +21,11 @@ st.pyplot(fig)
 
 import streamlit as st
 
-# Create a button
-if st.button("Click me"):
-    st.write("Button was clicked!")
+import streamlit as st
+
+# Create a slider for selecting a number
+selected_number = st.slider("Select a number", min_value=0, max_value=10, value=5)
+st.write(f"You selected: {selected_number}")
 
 Species_Of_Fish = df['Species']
 Height_Of_Fish = df['Height']
