@@ -3,6 +3,12 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 
+import streamlit as st
+
+# Create a radio button for selecting an option
+selected_option = st.radio("Select an option", ["Option A", "Option B"])
+st.write(f"You selected: {selected_option}")
+
 
 df = pd.read_csv(r'Fish_Dataset.csv')
 Species_Of_Fish = df['Species']
@@ -19,11 +25,7 @@ plt.xticks(rotation=45,horizontalalignment='right' )
 
 st.pyplot(fig)
 
-import streamlit as st
 
-# Create a radio button for selecting an option
-selected_option = st.radio("Select an option", ["Option A", "Option B"])
-st.write(f"You selected: {selected_option}")
 
 Species_Of_Fish = df['Species']
 Height_Of_Fish = df['Height']
