@@ -21,11 +21,9 @@ st.pyplot(fig)
 
 import streamlit as st
 
-import streamlit as st
-
-# Create a slider for selecting a number
-selected_number = st.slider("Select a number", min_value=0, max_value=10, value=5)
-st.write(f"You selected: {selected_number}")
+# Create a radio button for selecting an option
+selected_option = st.radio("Select an option", ["Option A", "Option B", "Option C"])
+st.write(f"You selected: {selected_option}")
 
 Species_Of_Fish = df['Species']
 Height_Of_Fish = df['Height']
