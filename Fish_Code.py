@@ -19,6 +19,12 @@ plt.xticks(rotation=45,horizontalalignment='right' )
 
 st.pyplot(fig)
 
+import streamlit as st
+
+# Create a button
+if st.button("Click me"):
+    st.write("Button was clicked!")
+
 Species_Of_Fish = df['Species']
 Height_Of_Fish = df['Height']
 
@@ -33,11 +39,7 @@ plt.xticks(rotation=45,horizontalalignment='right' )
 
 st.pyplot(fig1)
 
-import streamlit as st
 
-# Create a button
-if st.button("Click me"):
-    st.write("Button was clicked!")
 
 
 
