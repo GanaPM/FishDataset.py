@@ -22,7 +22,7 @@ st.pyplot(fig)
 import streamlit as st
 
 # Create a radio button for selecting an option
-selected_option = st.radio("Select an option", ["Option A", "Option B", "Option C"])
+selected_option = st.radio("Select an option", ["Option A", "Option B"])
 st.write(f"You selected: {selected_option}")
 
 Species_Of_Fish = df['Species']
