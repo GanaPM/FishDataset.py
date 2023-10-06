@@ -5,9 +5,11 @@ import matplotlib.pyplot as plt
 
 import streamlit as st
 
-# Create a radio button for selecting an option
-selected_option = st.radio("Select an option", ["Option A", "Option B"])
-st.write(f"You selected: {selected_option}")
+option = st.selectbox(
+    'How would you like to be contacted?',
+    ('Weight_vs_Species','Height_vs_Species')
+
+st.write('You selected:', option)
 
 
 df = pd.read_csv(r'Fish_Dataset.csv')
